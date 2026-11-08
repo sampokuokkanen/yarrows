@@ -1172,7 +1172,6 @@ public class XmlNode extends RubyObject
   namespace(ThreadContext context)
   {
     final XmlDocument doc = document(context.runtime);
-    if (doc instanceof Html4Document) { return context.nil; }
 
     String namespaceURI = node.getNamespaceURI();
     if (namespaceURI == null || namespaceURI.isEmpty()) {
